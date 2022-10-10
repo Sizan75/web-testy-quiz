@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../../images/logo1111.png'
-import './Header.css';
+
 
 const Header = () => {
   
@@ -61,7 +61,7 @@ const Header = () => {
               >
                   <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                       <li className="text-gray-600 hover:text-blue-600">
-                          <NavLink to="/home">Home</NavLink>
+                          <NavLink to="/">Home</NavLink>
                       </li>
                       <li className="text-gray-600 hover:text-blue-600">
                           <NavLink to="/Blog">Blog</NavLink>
