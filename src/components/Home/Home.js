@@ -5,7 +5,7 @@ import Quizzes from '../Quizzes/Quizzes';
 const Home = () => {
     const quiz= useLoaderData();
     const {data}= quiz;
-    console.log(data)
+    
 
     return (
         <div className='grid grid-cols-2 gap-4'>
