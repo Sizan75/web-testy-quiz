@@ -4,7 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 
 const QuizData = ({questionData}) => {
     console.log(questionData)
-    const {options, question, correctAnswer}= questionData;
+    const {options, question, correctAnswer,id}= questionData;
     // const [correctAns, setCorrectAns]= useState([])
 
     const handleCorrectAnswer = (option) =>{
@@ -26,7 +26,7 @@ const QuizData = ({questionData}) => {
                 options.map(option => <div className="bg-gray-100 dark:bg-gray-900 mx-6 h-16 w-auto mb-4 rounded-md flex items-center" onClick={()=> handleCorrectAnswer(option)}>
                     <input
                 type="radio"
-                name="answer"
+                name={id}
                 value={option}
                 className="ml-5 dark:bg-gray-800"
             />
