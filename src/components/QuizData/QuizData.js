@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 
 const QuizData = ({questionData}) => {
     console.log(questionData)
     const {options, question, correctAnswer}= questionData;
-    const [correctAns, setCorrectAns]= useState([])
+    // const [correctAns, setCorrectAns]= useState([])
 
     const handleCorrectAnswer = (option) =>{
         if(correctAnswer === option){
