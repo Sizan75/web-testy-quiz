@@ -30,7 +30,7 @@ const QuizData = ({questionData}) => {
            <div className='sm:flex items-center justify-center  '>
            <h1 className="text-gray-800 mb-4 dark:text-gray-300 font-sans font-medium text-xl pt-8 pl-8 mr-10">Question: {question.substring(3, question.length-4)}</h1>
            <Link>
-           <button onClick={() =>handleShowAnswer(correctAnswer)}> <FontAwesomeIcon icon={faEye} /></button>
+           <button onClick={() =>handleShowAnswer(correctAnswer)}> <FontAwesomeIcon icon={faEye}/></button>
            </Link>
            </div>
            <div className='grid sm:grid-cols-2 '>

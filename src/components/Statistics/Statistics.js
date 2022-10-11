@@ -1,16 +1,20 @@
 import React from 'react';
-// import { useLoaderData } from 'react-router-dom';
-// import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { useLoaderData } from 'react-router-dom';
+import { LineChart, Line, XAxis, YAxis,  Tooltip,  } from 'recharts';
 
 const Statistics = () => {
-//   const quizTopic= useLoaderData();
-    // const data=quizTopic.data;
-
+    const quizdata = useLoaderData();
+    const data= quizdata.data;
+    
     return (
-        <div>
-            
-            
-        </div>
+        <div >
+            <LineChart width={500} height={400} data={data}>
+            <Line type="monotone" dataKey="total" stroke="#82ca9d" />
+            <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip></Tooltip>
+            </LineChart>
+        </div> 
     );
 };
 
