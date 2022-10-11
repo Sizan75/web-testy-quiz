@@ -21,7 +21,7 @@ const Home = () => {
       
     
            
-        <div className='grid sm:grid-cols-2 gap-4 mt-24 '>
+        <div className='grid sm:grid-cols-2 gap-4 mt-24 ml-12'>
             {
                 data.map(quizzes =><Quizzes key={quizzes.id}
                 quizzes={quizzes}></Quizzes> )
