@@ -6,7 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
   import { faEye } from '@fortawesome/free-solid-svg-icons'  
 
 const QuizData = ({questionData}) => {
-    console.log(questionData)
+    // console.log(questionData)
     const {options, question, correctAnswer,id}= questionData;
     const [correctAns, setCorrectAns]= useState([])
 
@@ -21,14 +21,14 @@ const QuizData = ({questionData}) => {
     }
     const handleShowAnswer =(correctAnswer) => {
         const correctAns= correctAnswer;
-        setCorrectAns();
+        setCorrectAns(correctAns);
         toast.success(correctAns);  
     }
 
     return (
-        <div >
-           <div>
-           <h1 className="text-gray-800 mb-4 dark:text-gray-300 font-sans font-medium text-xl pt-8 pl-8">Question: {question.substring(3, question.length-4)}</h1>
+        <div>  
+           <div className='sm:flex items-center justify-center  '>
+           <h1 className="text-gray-800 mb-4 dark:text-gray-300 font-sans font-medium text-xl pt-8 pl-8 mr-10">Question: {question.substring(3, question.length-4)}</h1>
            <Link>
            <button onClick={() =>handleShowAnswer(correctAnswer)}> <FontAwesomeIcon icon={faEye} /></button>
            </Link>
@@ -55,6 +55,7 @@ const QuizData = ({questionData}) => {
             }
            </div>
         </div>
+    
     );
 };
 
