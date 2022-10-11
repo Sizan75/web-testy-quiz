@@ -20,7 +20,7 @@ const Quizzes = ({ quizzes }) => {
                     <span className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">TotalQuiz: {total}</span>
 
                     <div className="flex justify-between items-center">
-                        <Link to={`home/${id}`} className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center w-full mt-3"  >Start Quiz</Link>
+                        <Link to={`quiz/${id}`} className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center w-full mt-3"  >Start Quiz</Link>
                     </div>
                 </div>
             </div>
