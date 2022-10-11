@@ -70,7 +70,7 @@ const Header = () => {
                           <NavLink to="/statistics">Statistics</NavLink>
                       </li>
                       <li className="text-gray-600 hover:text-blue-600">
-                          <NavLink to="/quiz">Quiz</NavLink>
+                          <NavLink to="/">Quiz</NavLink>
                       </li>
                       
                   </ul>

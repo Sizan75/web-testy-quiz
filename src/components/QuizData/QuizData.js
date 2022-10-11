@@ -33,7 +33,7 @@ const QuizData = ({questionData}) => {
            <button onClick={() =>handleShowAnswer(correctAnswer)}> <FontAwesomeIcon icon={faEye} /></button>
            </Link>
            </div>
-           <div className='grid grid-cols-2'>
+           <div className='grid sm:grid-cols-2 '>
            {
                 options.map(option => <div className="bg-gray-100 dark:bg-gray-900 mx-6 h-16 w-auto mb-4 rounded-md flex items-center" onClick={()=> handleCorrectAnswer(option)}>
                  
@@ -49,7 +49,7 @@ const QuizData = ({questionData}) => {
             <ToastContainer  
             position="top-center"
             reverseOrder={false}
-            autoClose={500}
+            autoClose={4000}
             />
                      </div>)
             }
