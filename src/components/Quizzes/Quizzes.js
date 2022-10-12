@@ -8,7 +8,7 @@ const Quizzes = ({ quizzes }) => {
 
     return (
         <div className=''>
-            <div className="w-full max-w-sm bg-light rounded-lg shadow-md  border-solid border-2 border-sky-500  mt-5 ">
+            <div className="sm:w-3/5 auto-w-sm bg-light rounded-lg shadow-md  border-solid border-2 border-sky-500  mt-5 ">
                 <Link to={`quiz/${id}`}>
                    <img src={logo} alt="" className=' p-8 bg-black rounded-t-lg' />
                 </Link>
