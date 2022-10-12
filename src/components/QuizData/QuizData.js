@@ -26,7 +26,7 @@ const QuizData = ({ questionData }) => {
     return (
         <div>
             <div className='sm:flex items-center justify-center  '>
-                <h1 className="text-gray-800 mb-4 dark:text-gray-300 font-sans font-medium text-xl pt-8 pl-8 mr-10">Question  : {question.substring(3, question.length - 4)}</h1>
+                <h1 className="text-gray-800 mb-4 dark:text-white font-sans font-medium text-xl pt-8 pl-8 mr-10">Question  : {question.substring(3, question.length - 4)}</h1>
                 <Link>
                     <button onClick={() => handleShowAnswer(correctAnswer)}><FontAwesomeIcon icon={faEye} /></button>
                 </Link>
@@ -41,7 +41,7 @@ const QuizData = ({ questionData }) => {
                             value={option}
                             className="ml-5 dark:bg-gray-800"
                         />
-                        <label className="text-gray-700 dark:text-gray-400 text-lg ml-4">
+                        <label className="text-black dark:text-white text-lg ml-4">
                             {option}
                         </label>
                         <ToastContainer
